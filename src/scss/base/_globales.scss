@@ -1,0 +1,90 @@
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-padding-top: 0rem;
+}
+*, 
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: v.$fuente_principal;
+    font-size: 1.6rem;
+
+    &.fijar-body {
+        overflow: hidden;
+    }
+    &.body-scroll {
+        padding-top: 8.6rem;
+    }
+}
+
+p {
+    font-size: 2rem;
+    color: v.$negro;
+    line-height: 1.5;
+}
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3 {
+    margin: 0 0 5rem 0;
+}
+h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 3rem;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.outliner{
+    font-family: v.$fuente_outline;
+}
+
+.naranja{
+    color: v.$naranja;
+}
+
+.bgw1{
+    background-image: url("/src/img/Bg/BgW1.png");
+    background-size:contain;
+    background-position-x: center;
+}
+
+.bgw2{
+    background-image: url("/src/img/Bg/BgW2.png");
+    background-size:contain;
+    background-position-x: center;
+}
+
+.bgb2{
+    background-image: url("/src/img/Bg/BgB2.png");
+    background-size:contain;
+    background-position-x: center;
+    color: v.$blanco;
+}
+
+.bgb1{
+    background-image: url("/src/img/Bg/BgB1.png");
+    background-size:contain;
+    background-position-x: center;
+    color: v.$blanco;
+}
