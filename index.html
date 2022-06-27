@@ -12,7 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
-
+    
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js"crossorigin="anonymous"></script>
     <!-- Jquery -->
 
     <!-- Fuente Avenir -->
@@ -45,18 +46,37 @@
 <body>
 
     <header class="header">
+        
         <div class="contenedor contenido-header">
-            <a href="#inicio">
-                <img src="/src/img/opc7.png" alt="" max-width="17%">
-            </a>
-
             <nav class="navegacion-principal">
-                <a href="#inicio">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#galeria">Galería</a>
-                <a href="#contacto">Nosotros</a>
+                <a href="#inicio">
+                    <img src="/src/img/opc7.png" alt="" max-width="17%">
+                </a>
+                <button class="nav-toggle fas fa-bars">
+          
+                </button>
+                <ul class="nav-menu ">
+                    <li class="nav-menu-item">
+                        <a href="#inicio" class="nav-menu-link">Inicio</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#servicios" class="nav-menu-link">Servicios</a>
+                    </li>
+                    <li class="nav-menu-item">
+                    <a href="#proyectos" class="nav-menu-link">Proyectos</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#galeria" class="nav-menu-link">Galería</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#contacto" class="nav-menu-link">Nosotros</a>
+                    </li>
+                </ul>
             </nav>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+
         </div>
     </header>
 
@@ -454,26 +474,13 @@
 
         <div class="contenido-contacto">
             <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="600" height="600" id="gmap_canvas"
+                <div class="gmap_canvas">
+                    <iframe id="gmap_canvas"
                         src="https://maps.google.com/maps?q=agencianativo&t=&z=17&ie=UTF8&iwloc=&output=embed"
                         frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                        href="https://fmovies-online.net">fmovies</a><br>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 600px;
-                            width: 600px;
-                        }
-                    </style><a href="https://www.embedgooglemap.net">embed google maps on website</a>
-                    <style>
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 600px;
-                            width: 600px;
-                        }
-                    </style>
+                        href="https://fmovies-online.net"></a><br>
+                    <a href="https://www.embedgooglemap.net"></a>
+
                 </div>
             </div>
 
@@ -501,10 +508,12 @@
                         <div class="izquierda">
                             <button class='spaced btn-black' type="submit">ENVIAR</button>
                             <a class="whatsapp"
-                                href="https://wa.me/523323103405?text=Quiero%20m%C3%A1s%20informaci%C3%B3n..." target="_blank">
+                                href="https://wa.me/523323103405?text=Quiero%20m%C3%A1s%20informaci%C3%B3n..."
+                                target="_blank">
                                 <img src="src/img/whats.png" width="300" height="300" alt="">
                             </a>
-                            <a class='btn-black spaced' href="https://agencianativo.com/unete" target="_blank">ÚNETE A NATIVO</a>
+                            <a class='btn-black spaced' href="https://agencianativo.com/unete" target="_blank">ÚNETE A
+                                NATIVO</a>
                         </div>
                         <div class="derecha spaced">
                             <h3>DOMICILIO</h3>

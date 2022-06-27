@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'mixins' as m;
 
 html {
     font-size: 62.5%;
@@ -65,26 +66,44 @@ img {
 
 .bgw1{
     background-image: url("/src/img/Bg/BgW1.png");
-    background-size:contain;
     background-position-x: center;
+    background-repeat: repeat-x;
+    background-size:inherit;
+    
+    @include m.desktop{
+        background-size:contain;
+    }
 }
 
 .bgw2{
     background-image: url("/src/img/Bg/BgW2.png");
-    background-size:contain;
     background-position-x: center;
-}
+    background-size:inherit;
 
-.bgb2{
-    background-image: url("/src/img/Bg/BgB2.png");
-    background-size:contain;
-    background-position-x: center;
-    color: v.$blanco;
+    @include m.desktop{
+        background-size:contain;
+    }
 }
 
 .bgb1{
     background-image: url("/src/img/Bg/BgB1.png");
-    background-size:contain;
     background-position-x: center;
+    background-repeat: repeat-x;
     color: v.$blanco;
+    background-size:inherit;
+
+    @include m.desktop{
+        background-size:contain;
+    }
+}
+
+.bgb2{
+    color: v.$blanco;
+    background-image: url("/src/img/Bg/BgB2.png");
+    background-position-x: center;
+    background-size:inherit;
+
+    @include m.desktop{
+        background-size:contain;
+    }
 }

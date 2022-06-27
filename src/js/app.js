@@ -8,7 +8,36 @@ function iniciarApp() {
     crearGaleria();
     scrollNav();
     countup();
+    burgerNav();
 }
+
+function burgerNav() {
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("nav-menu-visible");
+        if(navMenu.classList.contains('nav-menu-visible')){
+            window.addEventListener("scroll", noscroll);
+        }
+        else{
+            window.removeEventListener('scroll', noscroll);
+        }
+    });
+
+    const navMenuItem = document.querySelectorAll(".nav-menu-item");
+    navMenuItem.forEach(function (navMenuItem) {
+        navMenuItem.addEventListener("click", () => {
+            navMenu.classList.toggle("nav-menu-visible");
+            window.removeEventListener('scroll', noscroll);
+        });
+    });
+
+}
+
+function noscroll() {
+    window.scrollTo(0, 0);
+}
+
 function countup() {
     const porqueStreaming = document.querySelector('.cercania-info');
     const counters = document.querySelectorAll('.counter');
