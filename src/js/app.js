@@ -27,8 +27,12 @@ function burgerNav() {
     const navMenuItem = document.querySelectorAll(".nav-menu-item");
     navMenuItem.forEach(function (navMenuItem) {
         navMenuItem.addEventListener("click", () => {
-            navMenu.classList.toggle("nav-menu-visible");
-            window.removeEventListener('scroll', noscroll);
+            if(navMenuItem.classList.contains('idioma')){
+            }
+            else{
+                navMenu.classList.toggle("nav-menu-visible");
+                window.removeEventListener('scroll', noscroll);
+            }
         });
     });
 
@@ -97,7 +101,7 @@ function navegacionFija() {
 
 
 function scrollNav() {
-    const enlaces = document.querySelectorAll('.navegacion-principal a');
+    const enlaces = document.querySelectorAll('.navegacion-principal .nav-menu-link');
 
     enlaces.forEach(enlace => {
         enlace.addEventListener('click', function (e) {

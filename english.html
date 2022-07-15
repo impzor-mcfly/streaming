@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="/src/img/Favicon Nativo.png">
+    <title>Streaming Nativo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+
+    <!-- Fuente Avenir -->
+    <style>
+        @font-face {
+            font-family: "Avenir";
+            src: url("src/font/Avenir.ttc");
+        }
+
+        .harlow {
+            font-family: "Avenir";
+        }
+    </style>
+
+    <!-- Fuente Sifonn -->
+    <style>
+        @font-face {
+            font-family: "Sifonn";
+            src: url("src/font/sifonn.otf");
+        }
+
+        .harlow {
+            font-family: "Sifonn";
+        }
+    </style>
+
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="contenedor contenido-header">
+            <nav class="navegacion-principal">
+                <a href="#inicio">
+                    <img src="/src/img/opc7.png" alt="" max-width="17%">
+                </a>
+                <button class="nav-toggle fas fa-bars">
+
+                </button>
+                <ul class="nav-menu ">
+                    <li class="nav-menu-item">
+                        <a href="#inicio" class="nav-menu-link">Home</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#servicios" class="nav-menu-link">Services</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#proyectos" class="nav-menu-link">Projects</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#galeria" class="nav-menu-link">Gallery</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#contacto" class="nav-menu-link">About Us</a>
+                    </li>
+                    <li class="nav-menu-item idioma">
+                        <div class="lang-menu">
+                            <div class="selected-lang-en">
+                                <ul>
+                                    <li>
+                                        <a href="english.html" class="en">English</a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html" class="es">Español</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-btn">
+                <div class="menu-btn__burger"></div>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="video" id="inicio">
+        <div class="overlay">
+            <div class="contenedor contenido-video outliner">
+                <h2>FROM THE <span class="naranja">IDEA</span></h2>
+                <h2>TO</h2>
+                <h2>STREAMING</h2>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/Intro.mp4" type="video/mp4">
+            <!-- <source src="video/concierto.ogg" type="video/ogg">
+            <source src="video/concierto.webm" type="video/webm"> -->
+        </video>
+    </div>
+
+    <section class="festival" id="servicios">
+        <div class="bgw1">
+            <div class="importante contenedor">
+                <div class="sobre-festival">
+                    <div class="titulo outliner">
+                        <h2>LES'S THINK AS</h2>
+                        <h2>USERS</h2>
+                    </div>
+                    <div class="contenido-festival">
+                        <h3>THE MOST IMPORTANT THING</h3>
+                        <p>How we consume products and/or
+                            services is a hybrid between physical
+                            experiences and digital
+                            content......</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bgb1">
+            <div class="sobre-marketing contenedor">
+                <h2 class="outliner">WHICH IS THE FASTEST GROWING TREND FOR MARKETING?</h2>
+                <p>INCREASED PREFERENCE OF PEOPLE TO VIDEO CONTENT</p>
+            </div>
+        </div>
+
+        <div class="bgw1">
+            <div class="porque-streaming contenedor">
+                <h2 class="outliner">WHY STREAMING?</h2>
+                <div class="contenido-porque">
+                    <div class="porque">
+                        <div>
+                            <h3>QUALITY</h3>
+                            <p>The real-time event adds much spontaneity and creativity, which are
+                                key factors to generate interest.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>AVAILABILITY</h3>
+                            <p>This can translate into recordings or videos that can be shared over
+                                networks, advertising or a list of live stream subscribers who will keep
+                                in touch.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="porque">
+                        <div>
+                            <h3>CLOSENESS</h3>
+                            <p class="cercania-info">Generate real-time bi-directional communication via live chat and
+                                defer interaction with on-demand recording feedback.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3>FEEDBACK</h3>
+                            <p>Gives access to a large amount of data: number of subscribers, likes, shared messages,
+                                interests and comments, essential to stay in contact with the public and continue to
+                                improve every act.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bgb1">
+            <div class="porcentajes contenedor">
+
+                <div class="porcentaje sobre-festival">
+                    <h2 class="outliner counter" data-target='12'>12%</h2>
+                    <p>OF FACEBOOK VIDEO POSTS ARE LIVE STREAMS,
+                        BUT LIVE STREAMS GET TWICE AS MUCH
+                    </p>
+                </div>
+                <div class="porcentaje sobre-festival">
+                    <h2 class="outliner naranja counter" data-target='78'>78</h2>
+                    <p>OF ONLINE CONTENT CONSUMED IS AUDIOVISUAL MATERIAL</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bgw1">
+            <div class="procesos contenedor">
+                <h2 class="outliner">OUR PROCESS</h2>
+                <div class="sobre-procesos">
+                    <div class="proceso">
+                        <div class="imagen">
+                            <picture>
+                                <source srcset="build/img/proceso/concepto.avif" type="image/avif">
+                                <source srcset="build/img/proceso/concepto.webp" type="image/webp">
+                                <img loading="lazy" width="100" height="200" src="build/img/proceso/concepto.jpg"
+                                    alt="imagen mh 180 disruptivo">
+                            </picture>
+                        </div>
+                        <h3 class="spaced">CONCEPT</h3>
+                        <p>Specify what, how, when, and for
+                            whom it will take place</p>
+                    </div>
+
+                    <div class="proceso">
+                        <div class="imagen">
+                            <picture>
+                                <source srcset="build/img/proceso/produccion.avif" type="image/avif">
+                                <source srcset="build/img/proceso/produccion.webp" type="image/webp">
+                                <img loading="lazy" width="100" height="200" src="build/img/proceso/produccion.jpg"
+                                    alt="imagen mh 180 disruptivo">
+                            </picture>
+                        </div>
+                        <h3 class="spaced">PRODUCTION</h3>
+                        <p>We work minute by minute & Assets hand in hand with the brand to achieve clear objectives.
+                        </p>
+                    </div>
+
+                    <div class="proceso">
+                        <div class="imagen">
+                            <picture>
+                                <source srcset="build/img/proceso/lanzamiento.avif" type="image/avif">
+                                <source srcset="build/img/proceso/lanzamiento.webp" type="image/webp">
+                                <img loading="lazy" width="100" height="200" src="build/img/proceso/lanzamiento.jpg"
+                                    alt="imagen mh 180 disruptivo">
+                            </picture>
+                        </div>
+                        <h3 class="spaced">LAUNCH</h3>
+                        <p>Coordination, operation and live
+                            transmission on the platform defined
+                            for the event.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="usos-streaming bgb2">
+        <div class="contenedor">
+            <h2 class="outliner">STREAMING USES</h2>
+
+            <div class="uso">
+                <div class="titulo">
+                    <h2>EXHIBITIONS</h2>
+                </div>
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/servicios/servicios1cut.avif" type="image/avif">
+                        <source srcset="build/img/servicios/servicios1cut.webp" type="image/webp">
+                        <img loading="lazy" width="100" height="200" src="build/img/servicios/servicios1cut.jpg"
+                            alt="imagen mh 180 disruptivo">
+                    </picture>
+                </div>
+                <div class="uso-info">
+                    <h3>Extend the message</h3>
+                    <p>Expand communication channels during your events with live, on-demand programming on social
+                        media.
+                    </p>
+                </div>
+            </div>
+
+            <div class="uso">
+                <div class="titulo">
+                    <h2>TRAINING CURSES</h2>
+                </div>
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/servicios/servicios2.avif" type="image/avif">
+                        <source srcset="build/img/servicios/servicios2.webp" type="image/webp">
+                        <img loading="lazy" width="100" height="200" src="build/img/servicios/servicios2.png"
+                            alt="imagen mh 180 disruptivo">
+                    </picture>
+                </div>
+                <div class="uso-info">
+                    <h3>Approach your collaborators</h3>
+                    <p>Formation in closed groups via various corporate platforms such as Zoom, Webex, Avaya, Google
+                        Meet, etc...
+                    </p>
+                </div>
+            </div>
+
+            <div class="uso">
+                <div class="titulo">
+                    <h2>PRODUCT</h2>
+                    <h2>LAUNCHING</h2>
+                </div>
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/servicios/servicios3.avif" type="image/avif">
+                        <source srcset="build/img/servicios/servicios3.webp" type="image/webp">
+                        <img loading="lazy" width="100" height="200" src="build/img/servicios/servicios3.jpg"
+                            alt="imagen mh 180 disruptivo">
+                    </picture>
+                </div>
+                <div class="uso-info">
+                    <h3>Inrceased numbre of buyers</h3>
+                    <p>Show your products in more locations,
+                        expand geographical boundaries in communicating with customers and
+                        perspectives.
+                    </p>
+                </div>
+            </div>
+
+            <div class="uso">
+                <div class="titulo">
+                    <h2>MASTERCLASS</h2>
+                </div>
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/servicios/servicios4.avif" type="image/avif">
+                        <source srcset="build/img/servicios/servicios4.webp" type="image/webp">
+                        <img loading="lazy" width="100" height="200" src="build/img/servicios/servicios4.jpg"
+                            alt="imagen mh 180 disruptivo">
+                    </picture>
+                </div>
+                <div class="uso-info">
+                    <h3>Remote experiences</h3>
+                    <p>Barista, Mixologists, Chefs, Grillers, 
+                        Magicians, Winemakers, Artist and more
+                        talents ready to create memorable
+                        experiences.
+                    </p>
+                </div>
+            </div>
+
+            <div class="uso">
+                <div class="titulo">
+                    <h2>CONGRESSES &</h2>
+                    <h2>CONFERENCES</h2>
+                </div>
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/servicios/servicios5.avif" type="image/avif">
+                        <source srcset="build/img/servicios/servicios5.webp" type="image/webp">
+                        <img loading="lazy" width="100" height="200" src="build/img/servicios/servicios5.png"
+                            alt="imagen mh 180 disruptivo">
+                    </picture>
+                </div>
+                <div class="uso-info">
+                    <h3>Online Interactivity</h3>
+                    <p>Virtual stages andor enclousers with
+                        dynamics and digital activations to carry
+                        out your event.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="proyectos bgw2">
+        <h2 class="outliner">SUCCESSFUL CASES</h2>
+
+        <div class="contenedor">
+
+            <div class="proyecto">
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/proyectos/ProyectoMH.avif" type="image/avif">
+                        <source srcset="build/img/proyectos/ProyectoMH.webp" type="image/webp">
+                        <img loading="lazy" width="100" height="200" src="build/img/proyectos/ProyectoMH.png"
+                            alt="imagen mh 180 disruptivo">
+                    </picture>
+                </div>
+                <div class="detalles-proyecto">
+                    <h3>MH 180 DISRUPTIVO</h3>
+                    <ul>
+                        <li>8 Hours of transmission / 1 Day</li>
+                        <li>3 Stand Camera 1 Remote Camera</li>
+                        <li>8,000 connections</li>
+                    </ul>
+                    <a href="https://www.youtube.com/watch?v=GIp6cUP-gvU" target="_blank">LINK</a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/proyectos/ProyectosLanzamiento.avif" type="image/avif">
+                        <source srcset="build/img/proyectos/ProyectosLanzamiento.webp" type="image/webp">
+                        <img loading="lazy" width="100" height="200" src="build/proyectos/ProyectosLanzamiento.jpg"
+                            alt="imagen lanzamiento producto">
+                    </picture>
+                </div>
+                <div class="detalles-proyecto">
+                    <h3>PRODUCT LAUNCH</h3>
+                    <ul>
+                        <li>5 Hours of transmision / 1 day</li>
+                        <li>2 Stand Camera 6 Remote Camera</li>
+                        <li>Broadcasting in 6 Cinepolis Cinema in 6 states</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/proyectos/ProyectosIntegra.avif" type="image/avif">
+                        <source srcset="build/img/proyectos/ProyectosIntegra.webp" type="image/webp">
+                        <img loading="lazy" width="100" height="200" src="build/img/proyectos/ProyectosLanzamiento.jpg"
+                            alt="imagen integra">
+                    </picture>
+                </div>
+                <div class="detalles-proyecto">
+                    <h3>INTEGRA MH 2021</h3>
+                    <ul>
+                        <li>8 Hours of transmission / 1 Day</li>
+                        <li>Development of Venue Virtual 360</li>
+                        <li>7,200 connections</li>
+                        <li>Mex / USA / Guatemala</li>
+                    </ul>
+                    <a href="https://www.mhintegra.com/" target="_blank">LINK</a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/proyectos/ProyectoExposport.avif" type="image/avif">
+                        <source srcset="build/img/proyectos/ProyectoExposport.webp" type="image/webp">
+                        <img loading="lazy" width="100" height="200" src="build/img/proyectos/ProyectoExposport.jpg"
+                            alt="imagen vocalista">
+                    </picture>
+                </div>
+                <div class="detalles-proyecto">
+                    <h3>EXPO SPORT 2022</h3>
+                    <ul>
+                        <li>8 Hours of transmission / 2 Days</li>
+                        <li>2 Stand Camera 1 Remote Cameras</li>
+                        <li>10,834 Reproductions</li>
+                    </ul>
+                    <a href="https://www.facebook.com/exposports.mx/videos/400552278071767" target="_blank">LINK</a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="imagen">
+                    <picture>
+                        <source srcset="build/img/proyectos/ProyectoComvet.avif" type="image/avif">
+                        <source srcset="build/img/proyectos/ProyectoComvet.webp" type="image/webp">
+                        <img loading="lazy" width="100" height="200" src="build/img/proyectos/ProyectoComvet.jpg"
+                            alt="imagen vocalista">
+                    </picture>
+                </div>
+                <div class="detalles-proyecto">
+                    <h3>EXPO COMVET 2022</h3>
+                    <ul>
+                        <li>12 Hours of transmission / 2 Days</li>
+                        <li>2 Stand Camera 1 Product Camera</li>
+                        <li>7,800 Reproductions</li>
+                    </ul>
+                    <a href="https://www.facebook.com/Comvetmx/videos/1126910578149337" target="_blank">LINK</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="galeria">
+        <div class="contenedor">
+
+            <h2 class="outliner">Gallery</h2>
+
+            <ul class="galeria-imagenes"></ul>
+        </div>
+
+    </section>
+
+    <section id="contacto" class="contacto contenedor">
+        <div class="titulo spaced">
+            <h2>CONTACT</h2>
+        </div>
+
+        <div class="contenido-contacto">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=agencianativo&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                        href="https://fmovies-online.net"></a><br>
+                    <a href="https://www.embedgooglemap.net"></a>
+
+                </div>
+            </div>
+
+            <div class="formulario">
+                <form action="https://formsubmit.co/contacto@agencianativo.com" method="POST">
+                    <div class="form-group">
+                        <input class="form-control border-bottom-c spaced" type="text" name="name" placeholder='NAME'
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control border-bottom-c spaced" type="email" name="email" placeholder='EMAIL'
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control border-bottom-c spaced" type="text" name="number"
+                            placeholder='NUMBER' required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control border-bottom-c spaced" id="id_mensaje" name="mensaje"
+                            placeholder='LEAVE YOUR MESSAGE' cols="10" required rows="6"></textarea>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="izquierda">
+                            <button class='spaced btn-black' type="submit">SEND</button>
+                            <a class="whatsapp"
+                                href="https://wa.me/523323103405?text=Quiero%20m%C3%A1s%20informaci%C3%B3n..."
+                                target="_blank">
+                                <img src="src/img/whats.png" width="300" height="300" alt="">
+                            </a>
+                            <a class='btn-black spaced' href="https://agencianativo.com/unete" target="_blank">JOIN US</a>
+                        </div>
+                        <div class="derecha spaced">
+                            <h3>ADDRESS</h3>
+                            <p>Av. del Árbol 397 Int. 3, Chapalita Sur, 45046 Zapopan, Jalisco</p>
+                            <ul>
+                                <li class="spaced"><a href="tel:3323103405" class="text-black">33 23103405</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="site-footer">
+        <p>Agencia Nativo all rights reserved 2022</p>
+    </footer>
+
+
+    <script src="build/js/app.js"></script>
+</body>
+
+</html>
