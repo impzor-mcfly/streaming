@@ -68,8 +68,8 @@
     
     height: 100%;
     @include m.tablet{
+        margin: 0rem;
         width: auto;
-        margin: 1rem;
         position:inherit;
         display: flex;
     }
