@@ -75,7 +75,7 @@ function dev( done ) {
 }
 
 function tarea (done) {
-    console.log('Desde la primera tarea');
+
     done();
 }
  

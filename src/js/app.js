@@ -16,10 +16,10 @@ function burgerNav() {
     const navMenu = document.querySelector(".nav-menu");
     navToggle.addEventListener("click", () => {
         navMenu.classList.toggle("nav-menu-visible");
-        if(navMenu.classList.contains('nav-menu-visible')){
+        if (navMenu.classList.contains('nav-menu-visible')) {
             window.addEventListener("scroll", noscroll);
         }
-        else{
+        else {
             window.removeEventListener('scroll', noscroll);
         }
     });
@@ -27,9 +27,9 @@ function burgerNav() {
     const navMenuItem = document.querySelectorAll(".nav-menu-item");
     navMenuItem.forEach(function (navMenuItem) {
         navMenuItem.addEventListener("click", () => {
-            if(navMenuItem.classList.contains('idioma')){
+            if (navMenuItem.classList.contains('idioma')) {
             }
-            else{
+            else {
                 navMenu.classList.toggle("nav-menu-visible");
                 window.removeEventListener('scroll', noscroll);
             }
@@ -67,17 +67,14 @@ function countup() {
                     } else {
                         count.textContent = target;
                         counter.textContent = target + '%';
-                        console.log(typeof stopcounter, stopcounter);
                     }
 
                 };
                 updateCounter();
             });
-            console.log('entramos al if');
         }
         if ((porqueStreaming.getBoundingClientRect().bottom > 0) && (stopcounter == true)) {
             stopcounter = false
-            console.log(stopcounter);
         }
     });
 }
@@ -86,17 +83,24 @@ function navegacionFija() {
     const barra = document.querySelector('.header');
     const sobreFestival = document.querySelector('.video');
     const body = document.querySelector('body');
+    window.addEventListener('resize', function (event) {
+        console.log(screen.width);
 
 
-    window.addEventListener('scroll', function () {
-        if (sobreFestival.getBoundingClientRect().bottom < 0) {
-            barra.classList.add('fijo');
-            body.classList.add('body-scroll');
-        } else {
-            barra.classList.remove('fijo');
-            body.classList.remove('body-scroll');
+
+        if (screen.width > 480) {
+            console.log('entramos al if navegacion');
+            window.addEventListener('scroll', function () {
+                if (sobreFestival.getBoundingClientRect().bottom < 0) {
+                    barra.classList.add('fijo');
+                    body.classList.add('body-scroll');
+                } else {
+                    barra.classList.remove('fijo');
+                    body.classList.remove('body-scroll');
+                }
+            });
         }
-    });
+    }, true);
 }
 
 
@@ -105,10 +109,10 @@ function scrollNav() {
 
     enlaces.forEach(enlace => {
         enlace.addEventListener('click', function (e) {
-            if(enlace.classList.contains('idioma')){
+            if (enlace.classList.contains('idioma')) {
             }
-            else{
-            e.preventDefault();
+            else {
+                e.preventDefault();
 
                 const seccionScroll = e.target.attributes.href.value;
                 const seccion = document.querySelector(seccionScroll);

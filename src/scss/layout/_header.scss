@@ -10,7 +10,6 @@
             top: 0;
             position: fixed;
             width: 100%;
-            box-shadow: .1rem .2rem .3rem #333;
         }
     }
 
@@ -33,6 +32,7 @@
             // display: flex;
             justify-content: space-between;
             align-items: center;
+        
         }
     }
 }
@@ -43,6 +43,7 @@
     padding: 1rem;
     img {
         width: 10rem;
+        margin: 6px auto;
     }
     align-items: center;
 
@@ -90,7 +91,16 @@
     }
 
     &:hover {
-        color: v.$amarillo;
+        color: v.$naranja;
+    }
+}
+
+.idioma{
+    padding-top: 5px;
+    font-size: 1.7rem;
+    color: v.$naranja;
+    &:hover {
+        color: gray;
     }
 }
 
@@ -104,7 +114,7 @@
     border: none;
     font-size: 4rem;
     display: block;
-
+    padding-right: 0;
     @include m.tablet {
         display: none;
     }
